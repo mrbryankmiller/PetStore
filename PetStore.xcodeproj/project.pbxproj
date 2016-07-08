@@ -13,7 +13,24 @@
 		1EFD7F211D30133600818FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD7F1F1D30133600818FF2 /* Main.storyboard */; };
 		1EFD7F231D30133600818FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD7F221D30133600818FF2 /* Assets.xcassets */; };
 		1EFD7F261D30133600818FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD7F241D30133600818FF2 /* LaunchScreen.storyboard */; };
+		1EFD7F2F1D30171600818FF2 /* CustomControlsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFD7F2D1D30169100818FF2 /* CustomControlsFramework.framework */; };
+		1EFD7F301D30171600818FF2 /* CustomControlsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFD7F2D1D30169100818FF2 /* CustomControlsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E3BCC781467ACBE59E5AA43 /* libPods-PetStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8675CA7EBCB3EC594518B670 /* libPods-PetStore.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EFD7F311D30171600818FF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1EFD7F301D30171600818FF2 /* CustomControlsFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1EFD7F131D30133600818FF2 /* PetStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,10 @@
 		1EFD7F221D30133600818FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EFD7F251D30133600818FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EFD7F271D30133600818FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFD7F2D1D30169100818FF2 /* CustomControlsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomControlsFramework.framework; sourceTree = "<group>"; };
+		8675CA7EBCB3EC594518B670 /* libPods-PetStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88932B9100E7B87FCC56D191 /* Pods-PetStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetStore/Pods-PetStore.release.xcconfig"; sourceTree = "<group>"; };
+		DAB3C054A2A17B0DF13D5A20 /* Pods-PetStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetStore/Pods-PetStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFD7F2F1D30171600818FF2 /* CustomControlsFramework.framework in Frameworks */,
+				9E3BCC781467ACBE59E5AA43 /* libPods-PetStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +65,11 @@
 		1EFD7F0A1D30133600818FF2 = {
 			isa = PBXGroup;
 			children = (
+				1EFD7F2D1D30169100818FF2 /* CustomControlsFramework.framework */,
 				1EFD7F151D30133600818FF2 /* PetStore */,
 				1EFD7F141D30133600818FF2 /* Products */,
+				7F0DB3B6264D4412ABF12BFD /* Pods */,
+				49C02D1C7AFA4EEEDC53CAD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +105,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49C02D1C7AFA4EEEDC53CAD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8675CA7EBCB3EC594518B670 /* libPods-PetStore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F0DB3B6264D4412ABF12BFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAB3C054A2A17B0DF13D5A20 /* Pods-PetStore.debug.xcconfig */,
+				88932B9100E7B87FCC56D191 /* Pods-PetStore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EFD7F2A1D30133600818FF2 /* Build configuration list for PBXNativeTarget "PetStore" */;
 			buildPhases = (
+				168149711923FCECB7E651AB /* 📦 Check Pods Manifest.lock */,
 				1EFD7F0F1D30133600818FF2 /* Sources */,
 				1EFD7F101D30133600818FF2 /* Frameworks */,
 				1EFD7F111D30133600818FF2 /* Resources */,
+				1EFD7F311D30171600818FF2 /* Embed Frameworks */,
+				7AD4726D04E3D341EDAA7C4D /* 📦 Embed Pods Frameworks */,
+				051AA32825DA74B9158AB2A7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +190,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051AA32825DA74B9158AB2A7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetStore/Pods-PetStore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		168149711923FCECB7E651AB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD4726D04E3D341EDAA7C4D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetStore/Pods-PetStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EFD7F0F1D30133600818FF2 /* Sources */ = {
@@ -263,8 +358,13 @@
 		};
 		1EFD7F2B1D30133600818FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB3C054A2A17B0DF13D5A20 /* Pods-PetStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.PetStore;
@@ -274,8 +374,13 @@
 		};
 		1EFD7F2C1D30133600818FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88932B9100E7B87FCC56D191 /* Pods-PetStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.PetStore;
@@ -302,6 +407,7 @@
 				1EFD7F2C1D30133600818FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
